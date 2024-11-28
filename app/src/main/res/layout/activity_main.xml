@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bgbg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cream"
+        android:id="@+id/constraintlayout"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/dashboardname"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:text="DASHBOARD"
+            android:background="@drawable/backgroundtext"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toStartOf="@+id/dashboardimage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dashboarddesc"
+            android:text="Welcome to STRING APP"
+            android:textSize="14sp"
+            android:layout_marginStart="18dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dashboardname"
+            app:layout_constraintEnd_toStartOf="@+id/dashboardimage"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dashboarddesc2"
+            android:textSize="14sp"
+            android:layout_marginStart="18dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dashboarddesc"
+            app:layout_constraintEnd_toStartOf="@+id/dashboardimage"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/dashb"
+            android:id="@+id/dashboardimage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintStart_toEndOf="@+id/dashboardname"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:id="@+id/row1"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:background="@color/green"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dashboardimage">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/card1"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/namecard1"
+                        android:text="Event List"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/imagecard1"
+                        android:textColor="@color/green"/>
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/imagecard1"
+                        android:src="@drawable/create"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/card2"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/namecard2"
+                        android:text="Temperature"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/imagecard2"
+                        android:textColor="@color/green"/>
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/imagecard2"
+                        android:src="@drawable/baseline_cloud_queue_24"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:id="@+id/row2"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@color/green"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/row1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/card3"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/namecard3"
+                        android:text="Settings"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/imagecard3"
+                        android:textColor="@color/green"/>
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/imagecard3"
+                        android:src="@drawable/settings"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/card4"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="179dp"
+                    android:layout_height="139dp">
+
+                    <TextView
+                        android:id="@+id/namecard4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imagecard4"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Profile"
+                        android:textSize="20sp"
+                        android:textColor="@color/green"/>
+
+                    <ImageView
+                        android:id="@+id/imagecard4"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/user" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

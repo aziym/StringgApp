@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contact_Us"
+    android:background="@color/green">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/buttonM"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back_btn"
+            android:padding="14dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="377dp"
+        android:layout_height="288dp"
+        android:background="@drawable/round_back_white10_20"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.196"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="At String, birthdays become more than just a date they become enchanting experiences. As your dedicated birthday party event organizers, we specialize in transforming your vision into a seamless and joy-filled celebration. From personalized themes to meticulous details, we craft extraordinary memories, ensuring a day of laughter, love, and pure delight. Let us handle the logistics, so you can relish every magical moment of your special day."
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="377dp"
+        android:layout_height="206dp"
+        android:background="@drawable/round_back_white10_20"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="140dp"
+                android:layout_marginBottom="20dp"
+                android:text="Visit Our Page"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <!-- Facebook -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/messageIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="1dp"
+                android:src="@drawable/facebook" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/messageIcon"
+                android:text="Facebook"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/facebook1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/baseline_keyboard_arrow_right_24" />
+
+        </RelativeLayout>
+
+        <!-- Gmail -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/AboutUsIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/email" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/AboutUsIcon"
+                android:text="Gmail"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/gmail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/baseline_keyboard_arrow_right_24" />
+
+        </RelativeLayout>
+
+        <!-- Twitter -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/LogoutIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="1dp"
+                android:src="@drawable/twitter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/LogoutIcon"
+                android:text="Twitter"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/twitter1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/baseline_keyboard_arrow_right_24" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

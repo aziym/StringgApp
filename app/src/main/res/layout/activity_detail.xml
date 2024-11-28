@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity"
+    android:background="@drawable/basic3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailTittle"
+        android:text="Tittle"
+        android:layout_marginTop="14dp"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/green"/>
+    
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:id="@+id/detailImage"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_drive_folder_upload_24"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:text="Description"
+        android:layout_gravity="center"
+        android:id="@+id/detailDesc"
+        android:textSize="18sp"
+        android:textColor="@color/green"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Check venue/location : "
+        android:textSize="18sp"
+        android:textColor="@color/green"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/source"
+        android:hint="Enter your location"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/destination"
+        android:hint="Enter venue/location"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+         />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:text="CHECK"
+        android:background="@color/lavender"
+        android:textColor="@color/white"
+        android:id="@+id/check"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="150dp"
+        android:text="JOIN"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/returnfab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/green"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:tint="@color/white" />
+
+</LinearLayout>
